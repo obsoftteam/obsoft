@@ -78,13 +78,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'obsoft',
+        'NAME': 'obsoftdb_hz3r',
 
-        'USER': 'obsoftadmin',
+        'USER': 'obsoftteam',
 
-        'PASSWORD': 'obsoftvasavi9',
+        'PASSWORD': '286FUEViNJy937WJOc5TCxFEEbhHFGwP',
 
-        'HOST': 'localhost',
+        'HOST': 'dpg-ch985tekobicv5sj1ve0-a',
 
         'PORT': '5432',
     }
