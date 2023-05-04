@@ -76,17 +76,19 @@ WSGI_APPLICATION = 'obe.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'obsoftdb_hz3r',
+        # 'NAME': 'obsoftdb_hz3r',
 
-        'USER': 'obsoftteam',
+        # 'USER': 'obsoftteam',
 
-        'PASSWORD': '286FUEViNJy937WJOc5TCxFEEbhHFGwP',
+        # 'PASSWORD': '286FUEViNJy937WJOc5TCxFEEbhHFGwP',
 
-        'HOST': 'dpg-ch985tekobicv5sj1ve0-a',
+        # 'HOST': 'dpg-ch985tekobicv5sj1ve0-a',
 
-        'PORT': '5432',
+        # 'PORT': '5432',
     }
 }
 
@@ -126,6 +128,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+# STATIC_ROOT = "staticfiles/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
