@@ -15,6 +15,11 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+import environ
+env=environ.Env()
+environ.Env.read_env()
+
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -76,22 +81,33 @@ WSGI_APPLICATION = 'obe.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'obsoftdb_hz3r',
+        # 'NAME': 'obsoftdb_hz3r',
 
-        'USER': 'obsoftteam',
+        # 'USER': 'obsoftteam',
 
-        'PASSWORD': '286FUEViNJy937WJOc5TCxFEEbhHFGwP',
+        # 'PASSWORD': '286FUEViNJy937WJOc5TCxFEEbhHFGwP',
 
-        # 'HOST': 'localhost',
-        'HOST': 'dpg-ch985tekobicv5sj1ve0-a',
+        # 'HOST': 'https://dashboard.render.com/dpg-ch985tekobicv5sj1ve0-a/',
+        # # 'HOST': 'dpg-ch985tekobicv5sj1ve0-a',
 
-        'PORT': '5432',
+        # 'PORT': '5432',
     }
 }
+
+
+import dj_database_url
+DATABASES={
+    'default':dj_database_url.parse("postgres://obsoftteam:286FUEViNJy937WJOc5TCxFEEbhHFGwP@dpg-ch985tekobicv5sj1ve0-a.oregon-postgres.render.com/obsoftdb_hz3r")
+}
+
+
+
+
+
 
 
 # Password validation
@@ -131,7 +147,7 @@ USE_TZ = True
 
 # STATIC_URL = 'staticfiles/'
 
-STATIC_URL = 'https://github.com/obsoftteam/obsoft/tree/main/staticfiles'
+STATIC_URL = 'https://github.com/obsoftteam/obsoft/tree/main/staticfiles/'
 
 # STATIC_ROOT = "staticfiles/"
 
