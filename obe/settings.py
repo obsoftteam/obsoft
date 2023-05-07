@@ -76,20 +76,20 @@ WSGI_APPLICATION = 'obe.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'obsoftdb_hz3r',
+#         'NAME': 'obsoftdb_hz3r',
 
-        'USER': 'obsoftteam',
+#         'USER': 'obsoftteam',
 
-        'PASSWORD': '286FUEViNJy937WJOc5TCxFEEbhHFGwP',
+#         'PASSWORD': '286FUEViNJy937WJOc5TCxFEEbhHFGwP',
 
-        # 'HOST': 'localhost',
-        'HOST': 'dpg-ch985tekobicv5sj1ve0-a',
+#         # 'HOST': 'localhost',
+#         'HOST': 'dpg-ch985tekobicv5sj1ve0-a',
 
-        'PORT': '5432',
+#         'PORT': '5432',
     }
 }
 
