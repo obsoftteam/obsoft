@@ -131,7 +131,7 @@ USE_TZ = True
 # STATIC_URL = 'staticfiles/'
 
 
-STATIC_URL = 'https://github.com/obsoftteam/obsoft/tree/main/staticfiles/'
+
 
 STATIC_URL = 'https://cdn.jsdelivr.net/gh/obsoftteam/obsoft@main/staticfiles/'
 
